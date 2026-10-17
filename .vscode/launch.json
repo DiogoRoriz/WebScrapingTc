@@ -1,0 +1,54 @@
+{
+    // Escolha a opção na aba "Executar e Depurar" (Ctrl+Shift+D) e aperte F5.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1. Coleta completa (4 lojas)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "2. Coleta só da Amazon",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["--lojas", "amazon"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "3. Coleta só da KaBuM! (rápida, sem navegador)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["--lojas", "kabum"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "4. Recalcular indicadores (sem coletar)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": ["--somente-tratamento"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "5. Testes",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/testes.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

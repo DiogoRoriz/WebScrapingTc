@@ -1,0 +1,98 @@
+2026-10-16 18:12:27 INFO    pipeline: ======================================================================
+2026-10-16 18:12:27 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-16.log)
+2026-10-16 18:12:27 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-16 18:12:27 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-16 18:12:29 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-16 18:12:32 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-16 18:12:34 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-16 18:12:37 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-16 18:12:40 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-16 18:12:42 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-16 18:12:45 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2899.90
+2026-10-16 18:12:48 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5299.99
+2026-10-16 18:12:52 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2199.99
+2026-10-16 18:12:55 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-16 18:12:58 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     519.99
+2026-10-16 18:13:01 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$    1016.41
+2026-10-16 18:13:03 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-16 18:13:06 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$    1139.05
+2026-10-16 18:13:09 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-16 18:13:11 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     466.39
+2026-10-16 18:13:15 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     789.99
+2026-10-16 18:13:16 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-16 18:13:19 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-16 18:13:21 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     349.99
+2026-10-16 18:13:24 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     699.89
+2026-10-16 18:13:26 INFO    extracao: KaBuM!: 20 ofertas coletadas, 1 não encontradas
+2026-10-16 18:13:38 INFO    extracao: Pichau: lendo a categoria Placa de Vídeo (https://www.pichau.com.br/hardware/placa-de-video)
+2026-10-16 18:13:46 INFO    extracao: Pichau: 36 anúncios na página (36 disponíveis)
+2026-10-16 18:13:46 INFO    extracao:   Pichau     Placa de Vídeo GeForce RTX 5060 8GB              não encontrado/sem estoque
+2026-10-16 18:13:46 INFO    extracao:   Pichau     Placa de Vídeo GeForce RTX 5070 12GB             não encontrado/sem estoque
+2026-10-16 18:13:46 INFO    extracao:   Pichau     Placa de Vídeo GeForce RTX 3060 12GB             não encontrado/sem estoque
+2026-10-16 18:13:46 INFO    extracao:   Pichau     Placa de Vídeo Radeon RX 7600 8GB                R$    1959.99
+2026-10-16 18:13:46 INFO    extracao: Pichau: 1 ofertas coletadas, 3 não encontradas
+2026-10-16 18:13:46 INFO    extracao: Terabyte: lendo a categoria Processador (https://www.terabyteshop.com.br/hardware/processadores)
+2026-10-16 18:14:12 INFO    extracao: Terabyte: 25 anúncios na página (25 disponíveis)
+2026-10-16 18:14:12 INFO    extracao:   Terabyte   Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-16 18:14:12 INFO    extracao:   Terabyte   Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-16 18:14:12 INFO    extracao:   Terabyte   Processador AMD Ryzen 5 7600                     R$    1299.99
+2026-10-16 18:14:12 INFO    extracao:   Terabyte   Processador AMD Ryzen 7 7800X3D                  não encontrado/sem estoque
+2026-10-16 18:14:12 INFO    extracao:   Terabyte   Processador Intel Core i5-12400F                 R$     829.99
+2026-10-16 18:14:12 INFO    extracao:   Terabyte   Processador Intel Core i5-14400F                 não encontrado/sem estoque
+2026-10-16 18:14:12 INFO    extracao: Terabyte: 3 ofertas coletadas, 3 não encontradas
+2026-10-16 18:14:12 INFO    extracao: Amazon: buscando 21 produtos
+2026-10-16 18:14:33 INFO    extracao:   Amazon     Processador AMD Ryzen 5 5600                     R$     808.04
+2026-10-16 18:14:46 INFO    extracao:   Amazon     Processador AMD Ryzen 7 5700X                    R$    1007.00
+2026-10-16 18:15:02 INFO    extracao:   Amazon     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-16 18:15:17 INFO    extracao:   Amazon     Processador AMD Ryzen 7 7800X3D                  R$    1871.40
+2026-10-16 18:15:34 INFO    extracao:   Amazon     Processador Intel Core i5-12400F                 R$    1125.85
+2026-10-16 18:15:48 INFO    extracao:   Amazon     Processador Intel Core i5-14400F                 R$    3752.50
+2026-10-16 18:16:01 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5060 8GB              R$    2799.99
+2026-10-16 18:16:18 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5070 12GB             R$    5594.43
+2026-10-16 18:16:31 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 3060 12GB             R$    2458.80
+2026-10-16 18:16:48 INFO    extracao:   Amazon     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-16 18:17:01 INFO    extracao:   Amazon     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     398.71
+2026-10-16 18:17:17 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$     798.19
+2026-10-16 18:17:31 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR5 5600MHz    não encontrado/sem estoque
+2026-10-16 18:17:44 INFO    extracao:   Amazon     SSD Kingston NV3 1TB M.2 NVMe                    R$     947.15
+2026-10-16 18:17:57 INFO    extracao:   Amazon     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    1720.97
+2026-10-16 18:18:13 INFO    extracao:   Amazon     SSD Kingston A400 480GB SATA                     R$     578.55
+2026-10-16 18:18:20 WARNING pipeline: Outra execução está em andamento. Encerrando.
+2026-10-16 18:18:38 WARNING pipeline: Outra execução está em andamento. Encerrando.
+2026-10-16 18:18:45 INFO    extracao:   Amazon     Placa-mãe ASUS TUF Gaming B550M-Plus             não encontrado/sem estoque
+2026-10-16 18:20:12 WARNING pipeline: Outra execução está em andamento. Encerrando.
+2026-10-16 18:21:09 WARNING pipeline: Outra execução está em andamento. Encerrando.
+2026-10-16 18:27:37 INFO    pipeline: ======================================================================
+2026-10-16 18:27:37 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-16.log)
+2026-10-16 18:27:37 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-16 18:27:37 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-16 18:27:38 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-16 18:27:41 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-16 18:27:44 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-16 18:27:47 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-16 18:27:50 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-16 18:27:52 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-16 18:27:55 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2899.90
+2026-10-16 18:27:57 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5299.99
+2026-10-16 18:27:59 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2199.99
+2026-10-16 18:28:02 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-16 18:28:04 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     519.99
+2026-10-16 18:28:06 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$    1016.41
+2026-10-16 18:28:09 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-16 18:28:11 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$    1139.05
+2026-10-16 18:28:14 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-16 18:28:17 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     466.39
+2026-10-16 18:28:20 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     789.99
+2026-10-16 18:28:22 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-16 18:28:24 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-16 18:28:27 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     349.99
+2026-10-16 18:28:29 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     699.89
+2026-10-16 18:28:32 INFO    extracao: KaBuM!: 20 ofertas coletadas, 1 não encontradas
+2026-10-16 18:28:32 INFO    extracao: Planilha bruta do dia: coleta_2026-10-16.xlsx (20 registros novos)
+2026-10-16 18:28:32 INFO    carga: Carga: 20 ofertas, 0 produtos e 0 lojas novas; 20 já existiam no dia
+2026-10-16 18:28:32 INFO    tratamento: Tratamento concluído: 158 ofertas, 5 outliers
+2026-10-16 18:28:32 INFO    tratamento:   Preço médio    68
+2026-10-16 18:28:32 INFO    tratamento:   Sem histórico  54
+2026-10-16 18:28:32 INFO    tratamento:   Boa compra     23
+2026-10-16 18:28:32 INFO    tratamento:   Evitar         13
+2026-10-16 18:28:32 INFO    pipeline: Pipeline concluído em 0:00:55

@@ -1,0 +1,488 @@
+2026-10-15 16:59:01 INFO    pipeline: ======================================================================
+2026-10-15 16:59:01 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-15.log)
+2026-10-15 16:59:01 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-15 16:59:01 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-15 16:59:03 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-15 16:59:06 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-15 16:59:08 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-15 16:59:10 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-15 16:59:14 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-15 16:59:17 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-15 16:59:20 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2699.99
+2026-10-15 16:59:23 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5199.99
+2026-10-15 16:59:26 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2199.99
+2026-10-15 16:59:29 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1999.99
+2026-10-15 16:59:32 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     519.99
+2026-10-15 16:59:35 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$     929.99
+2026-10-15 16:59:38 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-15 16:59:41 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$     994.90
+2026-10-15 16:59:44 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-15 16:59:46 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     466.39
+2026-10-15 16:59:49 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     759.99
+2026-10-15 16:59:52 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-15 16:59:55 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-15 16:59:57 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     289.99
+2026-10-15 16:59:59 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     699.89
+2026-10-15 17:00:01 INFO    extracao: KaBuM!: 20 ofertas coletadas, 1 não encontradas
+2026-10-15 17:00:09 INFO    extracao: Pichau: lendo a categoria SSD (https://www.pichau.com.br/hardware/ssd)
+2026-10-15 17:00:16 INFO    extracao: Pichau: 36 anúncios na página (35 disponíveis)
+2026-10-15 17:00:16 INFO    extracao:   Pichau     SSD Kingston NV3 1TB M.2 NVMe                    R$    1199.99
+2026-10-15 17:00:16 INFO    extracao:   Pichau     SSD Samsung 990 Pro 1TB M.2 NVMe                 não encontrado/sem estoque
+2026-10-15 17:00:16 INFO    extracao:   Pichau     SSD Kingston A400 480GB SATA                     não encontrado/sem estoque
+2026-10-15 17:00:16 INFO    extracao: Pichau: 1 ofertas coletadas, 2 não encontradas
+2026-10-15 17:00:16 INFO    extracao: Terabyte: lendo a categoria Placa-mãe (https://www.terabyteshop.com.br/hardware/placas-mae)
+2026-10-15 17:00:58 INFO    extracao: Terabyte: 152 anúncios na página (152 disponíveis)
+2026-10-15 17:00:58 INFO    extracao:   Terabyte   Placa-mãe ASUS TUF Gaming B550M-Plus             R$     779.99
+2026-10-15 17:00:58 INFO    extracao:   Terabyte   Placa-mãe MSI PRO B650M-P                        não encontrado/sem estoque
+2026-10-15 17:00:58 INFO    extracao: Terabyte: 1 ofertas coletadas, 1 não encontradas
+2026-10-15 17:00:58 INFO    extracao: Amazon: buscando 21 produtos
+2026-10-15 17:01:12 INFO    extracao:   Amazon     Processador AMD Ryzen 5 5600                     R$     808.04
+2026-10-15 17:01:30 INFO    extracao:   Amazon     Processador AMD Ryzen 7 5700X                    R$    1007.95
+2026-10-15 17:01:43 WARNING pipeline: Outra execução está em andamento. Encerrando.
+2026-10-15 17:01:43 INFO    extracao:   Amazon     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-15 17:02:00 INFO    extracao:   Amazon     Processador AMD Ryzen 7 7800X3D                  R$    1871.40
+2026-10-15 17:02:14 INFO    extracao:   Amazon     Processador Intel Core i5-12400F                 R$    1125.85
+2026-10-15 17:02:26 INFO    extracao:   Amazon     Processador Intel Core i5-14400F                 R$    3752.50
+2026-10-15 17:02:37 WARNING extracao: Amazon: falha ao buscar Placa de Vídeo GeForce RTX 5060 8GB: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.40); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d46dd]
+	(No symbol) [0x7ff7784c0072]
+	(No symbol) [0x7ff7784e5dc6]
+	(No symbol) [0x7ff778560d10]
+	(No symbol) [0x7ff778584dad]
+	(No symbol) [0x7ff778521d52]
+	(No symbol) [0x7ff778522b63]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff7786c07e4]
+	(No symbol) [0x7ff7786c0974]
+	(No symbol) [0x7ff7786ab5fc]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:02:37 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5060 8GB              não encontrado/sem estoque
+2026-10-15 17:02:45 WARNING extracao: Amazon: falha ao buscar Placa de Vídeo GeForce RTX 5070 12GB: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:02:45 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5070 12GB             não encontrado/sem estoque
+2026-10-15 17:02:53 WARNING extracao: Amazon: falha ao buscar Placa de Vídeo GeForce RTX 3060 12GB: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:02:53 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 3060 12GB             não encontrado/sem estoque
+2026-10-15 17:03:01 WARNING extracao: Amazon: falha ao buscar Placa de Vídeo Radeon RX 7600 8GB: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:01 INFO    extracao:   Amazon     Placa de Vídeo Radeon RX 7600 8GB                não encontrado/sem estoque
+2026-10-15 17:03:07 WARNING extracao: Amazon: falha ao buscar Memória Kingston Fury Beast 8GB DDR4 3200MHz: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:07 INFO    extracao:   Amazon     Memória Kingston Fury Beast 8GB DDR4 3200MHz     não encontrado/sem estoque
+2026-10-15 17:03:19 WARNING extracao: Amazon: falha ao buscar Memória Kingston Fury Beast 16GB DDR4 3200MHz: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:19 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR4 3200MHz    não encontrado/sem estoque
+2026-10-15 17:03:27 WARNING extracao: Amazon: falha ao buscar Memória Kingston Fury Beast 16GB DDR5 5600MHz: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:27 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR5 5600MHz    não encontrado/sem estoque
+2026-10-15 17:03:35 WARNING extracao: Amazon: falha ao buscar SSD Kingston NV3 1TB M.2 NVMe: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:35 INFO    extracao:   Amazon     SSD Kingston NV3 1TB M.2 NVMe                    não encontrado/sem estoque
+2026-10-15 17:03:45 WARNING extracao: Amazon: falha ao buscar SSD Samsung 990 Pro 1TB M.2 NVMe: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:45 INFO    extracao:   Amazon     SSD Samsung 990 Pro 1TB M.2 NVMe                 não encontrado/sem estoque
+2026-10-15 17:03:54 WARNING extracao: Amazon: falha ao buscar SSD Kingston A400 480GB SATA: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:03:54 INFO    extracao:   Amazon     SSD Kingston A400 480GB SATA                     não encontrado/sem estoque
+2026-10-15 17:04:03 WARNING extracao: Amazon: falha ao buscar Placa-mãe ASUS TUF Gaming B550M-Plus: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:04:03 INFO    extracao:   Amazon     Placa-mãe ASUS TUF Gaming B550M-Plus             não encontrado/sem estoque
+2026-10-15 17:04:11 WARNING extracao: Amazon: falha ao buscar Placa-mãe MSI PRO B650M-P: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:04:11 INFO    extracao:   Amazon     Placa-mãe MSI PRO B650M-P                        não encontrado/sem estoque
+2026-10-15 17:04:22 WARNING extracao: Amazon: falha ao buscar Fonte Corsair CX650 650W 80 Plus Bronze: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:04:22 INFO    extracao:   Amazon     Fonte Corsair CX650 650W 80 Plus Bronze          não encontrado/sem estoque
+2026-10-15 17:04:30 WARNING extracao: Amazon: falha ao buscar Fonte MSI MAG A650BN 650W 80 Plus Bronze: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:04:30 INFO    extracao:   Amazon     Fonte MSI MAG A650BN 650W 80 Plus Bronze         não encontrado/sem estoque
+2026-10-15 17:04:36 WARNING extracao: Amazon: falha ao buscar Fonte XPG Core Reactor II VE 750W 80 Plus Gold: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff778795805]
+	(No symbol) [0x7ff7786b7d50]
+	(No symbol) [0x7ff7784d44d6]
+	(No symbol) [0x7ff778520e53]
+	(No symbol) [0x7ff7785592e2]
+	(No symbol) [0x7ff7785530a2]
+	(No symbol) [0x7ff778552823]
+	(No symbol) [0x7ff77849c8eb]
+	(No symbol) [0x7ff77849cf52]
+	(No symbol) [0x7ff77849d585]
+	(No symbol) [0x7ff778bb8531]
+	(No symbol) [0x7ff778be430b]
+	(No symbol) [0x7ff778bd823e]
+	(No symbol) [0x7ff77889523e]
+	(No symbol) [0x7ff7786c57a5]
+	(No symbol) [0x7ff77849bd1a]
+	(No symbol) [0x7ff778c3e53f]
+	(No symbol) [0x7ffae660dda7]
+	(No symbol) [0x7ffae723ee4c]
+
+2026-10-15 17:04:37 INFO    extracao:   Amazon     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   não encontrado/sem estoque
+2026-10-15 17:04:45 INFO    extracao: Amazon: 6 ofertas coletadas, 15 não encontradas
+2026-10-15 17:04:47 INFO    extracao: Planilha bruta do dia: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\dados\coletas\coleta_2026-10-15.xlsx (28 registros novos)
+2026-10-15 17:04:48 INFO    carga: Carga: 28 ofertas, 0 produtos e 0 lojas novas; 0 já existiam no dia
+2026-10-15 17:04:49 INFO    tratamento: Tratamento concluído: 123 ofertas, 3 outliers
+2026-10-15 17:04:49 INFO    tratamento:   Sem histórico  54
+2026-10-15 17:04:49 INFO    tratamento:   Preço médio    44
+2026-10-15 17:04:49 INFO    tratamento:   Boa compra     15
+2026-10-15 17:04:49 INFO    tratamento:   Evitar         10
+2026-10-15 17:04:49 INFO    pipeline: Pipeline concluído em 0:05:48
+2026-10-15 17:08:53 INFO    pipeline: ======================================================================
+2026-10-15 17:08:53 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-15.log)
+2026-10-15 17:08:53 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-15 17:08:53 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-15 17:08:54 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-15 17:08:56 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-15 17:08:59 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-15 17:09:02 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-15 17:09:04 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-15 17:09:07 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-15 17:09:10 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2699.99
+2026-10-15 17:09:13 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5199.99
+2026-10-15 17:09:15 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2199.99
+2026-10-15 17:09:18 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1999.99
+2026-10-15 17:09:20 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     519.99
+2026-10-15 17:09:24 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$     929.99
+2026-10-15 17:09:27 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-15 17:09:30 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$     994.90
+2026-10-15 17:09:33 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-15 17:09:36 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     466.39
+2026-10-15 17:09:39 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     759.99
+2026-10-15 17:09:41 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-15 17:09:43 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-15 17:09:46 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     289.99
+2026-10-15 17:09:48 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     699.89
+2026-10-15 17:09:50 INFO    extracao: KaBuM!: 20 ofertas coletadas, 1 não encontradas
+2026-10-15 17:09:52 INFO    extracao: Pichau: lendo a categoria Processador (https://www.pichau.com.br/hardware/processadores)
+2026-10-15 17:09:58 INFO    extracao: Pichau: 36 anúncios na página (36 disponíveis)
+2026-10-15 17:09:58 INFO    extracao:   Pichau     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-15 17:09:58 INFO    extracao:   Pichau     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-15 17:09:58 INFO    extracao:   Pichau     Processador AMD Ryzen 5 7600                     não encontrado/sem estoque
+2026-10-15 17:09:58 INFO    extracao:   Pichau     Processador AMD Ryzen 7 7800X3D                  R$    1999.99
+2026-10-15 17:09:58 INFO    extracao:   Pichau     Processador Intel Core i5-12400F                 não encontrado/sem estoque
+2026-10-15 17:09:58 INFO    extracao:   Pichau     Processador Intel Core i5-14400F                 não encontrado/sem estoque
+2026-10-15 17:09:58 INFO    extracao: Pichau: 2 ofertas coletadas, 4 não encontradas
+2026-10-15 17:09:58 INFO    extracao: Terabyte: lendo a categoria Fonte (https://www.terabyteshop.com.br/fontes)
+2026-10-15 17:10:25 INFO    extracao: Terabyte: 152 anúncios na página (103 disponíveis)
+2026-10-15 17:10:25 INFO    extracao:   Terabyte   Fonte Corsair CX650 650W 80 Plus Bronze          R$     379.99
+2026-10-15 17:10:25 INFO    extracao:   Terabyte   Fonte MSI MAG A650BN 650W 80 Plus Bronze         não encontrado/sem estoque
+2026-10-15 17:10:25 INFO    extracao:   Terabyte   Fonte XPG Core Reactor II VE 750W 80 Plus Gold   não encontrado/sem estoque
+2026-10-15 17:10:25 INFO    extracao: Terabyte: 1 ofertas coletadas, 2 não encontradas
+2026-10-15 17:10:25 INFO    extracao: Amazon: buscando 21 produtos
+2026-10-15 17:10:32 INFO    extracao:   Amazon     Processador AMD Ryzen 5 5600                     R$     808.04
+2026-10-15 17:10:47 INFO    extracao:   Amazon     Processador AMD Ryzen 7 5700X                    R$    1007.95
+2026-10-15 17:11:03 INFO    extracao:   Amazon     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-15 17:11:15 INFO    extracao:   Amazon     Processador AMD Ryzen 7 7800X3D                  R$    1871.40
+2026-10-15 17:11:32 INFO    extracao:   Amazon     Processador Intel Core i5-12400F                 R$    1125.85
+2026-10-15 17:11:45 INFO    extracao:   Amazon     Processador Intel Core i5-14400F                 R$    2641.00
+2026-10-15 17:11:59 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5060 8GB              R$    2799.99
+2026-10-15 17:12:13 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5070 12GB             R$    5594.43
+2026-10-15 17:12:30 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 3060 12GB             R$    2458.80
+2026-10-15 17:12:48 INFO    extracao:   Amazon     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-15 17:13:01 INFO    extracao:   Amazon     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     398.71
+2026-10-15 17:13:19 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$     798.19
+2026-10-15 17:13:31 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2070.99
+2026-10-15 17:13:48 INFO    extracao:   Amazon     SSD Kingston NV3 1TB M.2 NVMe                    R$     949.89
+2026-10-15 17:14:00 INFO    extracao:   Amazon     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    1706.35
+2026-10-15 17:14:13 INFO    extracao:   Amazon     SSD Kingston A400 480GB SATA                     R$     615.60
+2026-10-15 17:14:30 INFO    extracao:   Amazon     Placa-mãe ASUS TUF Gaming B550M-Plus             não encontrado/sem estoque
+2026-10-15 17:14:44 INFO    extracao:   Amazon     Placa-mãe MSI PRO B650M-P                        R$     946.82
+2026-10-15 17:15:01 INFO    extracao:   Amazon     Fonte Corsair CX650 650W 80 Plus Bronze          não encontrado/sem estoque
+2026-10-15 17:15:14 INFO    extracao:   Amazon     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     266.71
+2026-10-15 17:15:29 INFO    extracao:   Amazon     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   não encontrado/sem estoque
+2026-10-15 17:15:38 INFO    extracao: Amazon: 18 ofertas coletadas, 3 não encontradas
+2026-10-15 17:15:41 INFO    extracao: Planilha bruta do dia: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\dados\coletas\coleta_2026-10-15.xlsx (41 registros novos)
+2026-10-15 17:15:41 INFO    carga: Carga: 15 ofertas, 0 produtos e 0 lojas novas; 26 já existiam no dia
+2026-10-15 17:15:41 INFO    tratamento: Tratamento concluído: 138 ofertas, 5 outliers
+2026-10-15 17:15:41 INFO    tratamento:   Sem histórico  54
+2026-10-15 17:15:41 INFO    tratamento:   Preço médio    54
+2026-10-15 17:15:41 INFO    tratamento:   Boa compra     19
+2026-10-15 17:15:41 INFO    tratamento:   Evitar         11
+2026-10-15 17:15:41 INFO    pipeline: Pipeline concluído em 0:06:48

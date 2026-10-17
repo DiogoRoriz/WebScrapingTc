@@ -1,0 +1,8 @@
+requests>=2.31
+beautifulsoup4>=4.12
+selenium>=4.20
+pandas>=2.2
+openpyxl>=3.1
+# numpy 2.5.x tem DLLs bloqueadas pelo Controle Inteligente de Aplicativos
+# do Windows 11 nesta máquina; a 2.4.x funciona normalmente.
+numpy>=1.26,<2.5

@@ -1,0 +1,85 @@
+2026-10-13 19:15:53 INFO    pipeline: ======================================================================
+2026-10-13 19:15:53 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-13.log)
+2026-10-13 19:15:53 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-13 19:15:53 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-13 19:15:54 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     R$     827.90
+2026-10-13 19:15:56 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-13 19:15:58 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-13 19:16:01 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-13 19:16:04 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-13 19:16:07 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-13 19:16:10 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2799.99
+2026-10-13 19:16:13 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5299.99
+2026-10-13 19:16:15 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2099.99
+2026-10-13 19:16:18 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1909.99
+2026-10-13 19:16:20 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     669.99
+2026-10-13 19:16:23 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$     999.31
+2026-10-13 19:16:26 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-13 19:16:28 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$    1139.05
+2026-10-13 19:16:31 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-13 19:16:34 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     466.39
+2026-10-13 19:16:37 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     741.90
+2026-10-13 19:16:39 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-13 19:16:42 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-13 19:16:44 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     289.99
+2026-10-13 19:16:47 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     699.89
+2026-10-13 19:16:49 INFO    extracao: KaBuM!: 21 ofertas coletadas, 0 não encontradas
+2026-10-13 19:17:05 INFO    extracao: Pichau: lendo a categoria Memória RAM (https://www.pichau.com.br/hardware/memorias)
+2026-10-13 19:17:15 INFO    extracao: Pichau: 36 anúncios na página (36 disponíveis)
+2026-10-13 19:17:15 INFO    extracao:   Pichau     Memória Kingston Fury Beast 8GB DDR4 3200MHz     não encontrado/sem estoque
+2026-10-13 19:17:15 INFO    extracao:   Pichau     Memória Kingston Fury Beast 16GB DDR4 3200MHz    não encontrado/sem estoque
+2026-10-13 19:17:15 INFO    extracao:   Pichau     Memória Kingston Fury Beast 16GB DDR5 5600MHz    não encontrado/sem estoque
+2026-10-13 19:17:15 INFO    extracao: Pichau: 0 ofertas coletadas, 3 não encontradas
+2026-10-13 19:17:15 INFO    extracao: Terabyte: lendo a categoria SSD (https://www.terabyteshop.com.br/hardware/hard-disk/ssd)
+2026-10-13 19:17:50 INFO    extracao: Terabyte: 25 anúncios na página (25 disponíveis)
+2026-10-13 19:17:50 INFO    extracao:   Terabyte   SSD Kingston NV3 1TB M.2 NVMe                    R$    1169.90
+2026-10-13 19:17:50 INFO    extracao:   Terabyte   SSD Samsung 990 Pro 1TB M.2 NVMe                 não encontrado/sem estoque
+2026-10-13 19:17:50 INFO    extracao:   Terabyte   SSD Kingston A400 480GB SATA                     R$     569.90
+2026-10-13 19:17:50 INFO    extracao: Terabyte: 2 ofertas coletadas, 1 não encontradas
+2026-10-13 19:17:50 INFO    extracao: Amazon: buscando 21 produtos
+2026-10-13 19:18:10 INFO    extracao:   Amazon     Processador AMD Ryzen 5 5600                     R$     808.04
+2026-10-13 19:18:27 INFO    extracao:   Amazon     Processador AMD Ryzen 7 5700X                    R$    1007.95
+2026-10-13 19:18:39 INFO    extracao:   Amazon     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-13 19:18:57 INFO    extracao:   Amazon     Processador AMD Ryzen 7 7800X3D                  R$    1871.40
+2026-10-13 19:19:15 INFO    extracao:   Amazon     Processador Intel Core i5-12400F                 R$    1105.17
+2026-10-13 19:19:28 INFO    extracao:   Amazon     Processador Intel Core i5-14400F                 R$    1000.00
+2026-10-13 19:19:40 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5060 8GB              R$    2799.99
+2026-10-13 19:19:54 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 5070 12GB             R$    5594.43
+2026-10-13 19:20:08 INFO    extracao:   Amazon     Placa de Vídeo GeForce RTX 3060 12GB             R$    2347.05
+2026-10-13 19:20:23 INFO    extracao:   Amazon     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-13 19:20:39 INFO    extracao:   Amazon     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     398.71
+2026-10-13 19:20:53 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$     798.19
+2026-10-13 19:21:09 INFO    extracao:   Amazon     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2070.99
+2026-10-13 19:21:24 INFO    extracao:   Amazon     SSD Kingston NV3 1TB M.2 NVMe                    R$     966.15
+2026-10-13 19:21:37 INFO    extracao:   Amazon     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    1691.79
+2026-10-13 19:21:53 INFO    extracao:   Amazon     SSD Kingston A400 480GB SATA                     R$     615.60
+2026-10-13 19:22:06 INFO    extracao:   Amazon     Placa-mãe ASUS TUF Gaming B550M-Plus             não encontrado/sem estoque
+2026-10-13 19:22:23 INFO    extracao:   Amazon     Placa-mãe MSI PRO B650M-P                        R$     946.82
+2026-10-13 19:22:40 INFO    extracao:   Amazon     Fonte Corsair CX650 650W 80 Plus Bronze          não encontrado/sem estoque
+2026-10-13 19:22:54 INFO    extracao:   Amazon     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     266.71
+2026-10-13 19:23:11 INFO    extracao:   Amazon     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   não encontrado/sem estoque
+2026-10-13 19:23:20 INFO    extracao: Amazon: 18 ofertas coletadas, 3 não encontradas
+2026-10-13 19:23:23 INFO    extracao: Planilha bruta do dia: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\dados\coletas\coleta_2026-10-13.xlsx (41 registros novos)
+2026-10-13 19:23:23 INFO    carga: Carga: 41 ofertas, 0 produtos e 0 lojas novas; 0 já existiam no dia
+2026-10-13 19:23:23 INFO    tratamento: Tratamento concluído: 95 ofertas, 2 outliers
+2026-10-13 19:23:23 INFO    tratamento:   Sem histórico  54
+2026-10-13 19:23:23 INFO    tratamento:   Preço médio    26
+2026-10-13 19:23:23 INFO    tratamento:   Boa compra     9
+2026-10-13 19:23:23 INFO    tratamento:   Evitar         6
+2026-10-13 19:23:23 INFO    pipeline: Pipeline concluído em 0:07:30
+2026-10-13 19:27:27 INFO    pipeline: ======================================================================
+2026-10-13 19:27:27 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-13.log)
+2026-10-13 19:27:27 INFO    tratamento: Tratamento concluído: 95 ofertas, 2 outliers
+2026-10-13 19:27:27 INFO    tratamento:   Sem histórico  54
+2026-10-13 19:27:27 INFO    tratamento:   Preço médio    26
+2026-10-13 19:27:27 INFO    tratamento:   Boa compra     9
+2026-10-13 19:27:27 INFO    tratamento:   Evitar         6
+2026-10-13 19:27:27 INFO    pipeline: Pipeline concluído em 0:00:00
+2026-10-13 19:28:37 INFO    pipeline: ======================================================================
+2026-10-13 19:28:37 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-13.log)
+2026-10-13 19:28:38 INFO    tratamento: Tratamento concluído: 95 ofertas, 2 outliers
+2026-10-13 19:28:38 INFO    tratamento:   Sem histórico  54
+2026-10-13 19:28:38 INFO    tratamento:   Preço médio    26
+2026-10-13 19:28:38 INFO    tratamento:   Boa compra     9
+2026-10-13 19:28:38 INFO    tratamento:   Evitar         6
+2026-10-13 19:28:38 INFO    pipeline: Pipeline concluído em 0:00:01

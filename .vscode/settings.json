@@ -1,0 +1,7 @@
+{
+    // Python que tem as bibliotecas do projeto instaladas. O comando
+    // "python" deste computador abre a Microsoft Store, por isso o caminho
+    // completo.
+    "python.defaultInterpreterPath": "C:\\Users\\carva\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "python.terminal.activateEnvironment": false
+}
