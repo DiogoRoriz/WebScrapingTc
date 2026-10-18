@@ -74,6 +74,25 @@ class TesteCorrespondencia(unittest.TestCase):
                                         config.PALAVRAS_PROIBIDAS_GLOBAIS)
         self.assertEqual(melhor.url, "f")
 
+    def test_computador_montado_nao_vira_processador(self):
+        # Caso real (Amazon, 15/10/2026): PC montado aceito como processador.
+        produto = {"palavras_obrigatorias": "i5 14400f",
+                   "palavras_proibidas": "", "preco_minimo": 500}
+        anuncios = [
+            Anuncio("PC Home Core i5-14400F H610 DDR4 GT 730 4GB Windows 11",
+                    3752.50, "pc"),
+            Anuncio("Kit Intel B760 Gamer DDR4 I5 14400F 14ª Geração",
+                    2641.00, "kit"),
+            Anuncio("Processador Intel Core i5-14400F LGA 1700", 1000.0,
+                    "cpu"),
+        ]
+        melhor = escolher_melhor_oferta(
+            anuncios[:2], produto, config.PALAVRAS_PROIBIDAS_GLOBAIS)
+        self.assertIsNone(melhor)
+        melhor = escolher_melhor_oferta(
+            anuncios, produto, config.PALAVRAS_PROIBIDAS_GLOBAIS)
+        self.assertEqual(melhor.url, "cpu")
+
     def test_preco_minimo_vazio(self):
         produto = {"palavras_obrigatorias": "a400",
                    "preco_minimo": float("nan")}
@@ -238,7 +257,7 @@ class TesteIntegracaoPlanilhas(unittest.TestCase):
         for loja, produto, preco in precos:
             linhas.append({
                 "data_coleta": datetime(2026, 10, dia, 3, 0, 0),
-                "loja": loja, "categoria_produto": "Processador",
+                "nome_loja": loja, "categoria_produto": "Processador",
                 "nome_produto": produto, "titulo_anuncio": produto + " BOX",
                 "preco": preco, "preco_prazo": preco * 1.1,
                 "url_oferta": f"https://exemplo/{loja}/{dia}",
@@ -330,6 +349,14 @@ class TesteIntegracaoPlanilhas(unittest.TestCase):
         res = ResultadoLoja(loja="Amazon", registros=dia4.to_dict("records"))
         ScriptExtracao.salvar_tabela_unica([res], dia=date(2026, 10, 4))
         self.assertEqual(len(list(config.PASTA_COLETAS.glob("*.xlsx"))), 1)
+        # Cópia em CSV para a ingestão da equipe, com as colunas do contrato.
+        from extracao import COLUNAS_COLETA
+        csv = pd.read_csv(config.PASTA_COLETAS / "coleta_2026-10-04.csv",
+                          parse_dates=["data_coleta"])
+        self.assertEqual(list(csv.columns), COLUNAS_COLETA)
+        self.assertEqual(csv.loc[0, "preco"], 950)
+        self.assertEqual(csv.loc[0, "data_coleta"],
+                         pd.Timestamp(2026, 10, 4, 3))
         recuperada = coleta_para_carga([], dia=date(2026, 10, 4))
         self.assertEqual(len(recuperada), 1)
         self.assertEqual(executar_carga(recuperada)["ofertas"], 1)

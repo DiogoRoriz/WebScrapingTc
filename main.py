@@ -1,9 +1,10 @@
 """Pipeline diário: extração -> carga -> tratamento.
 
 Execução manual:
-    python main.py                       # pipeline completo
-    python main.py --lojas kabum amazon  # só algumas lojas
-    python main.py --somente-tratamento  # recalcula os indicadores
+    py main.py                       # pipeline completo
+    py main.py --lojas kabum amazon  # só algumas lojas
+    py main.py --somente-extracao    # só gera a tabela única (CSV/Excel)
+    py main.py --somente-tratamento  # recalcula os indicadores
 
 A execução automática é feita pelo Agendador de Tarefas do Windows
 (ver agendar_tarefa.ps1).
@@ -113,9 +114,10 @@ def liberar_trava():
     ARQUIVO_TRAVA.unlink(missing_ok=True)
 
 
-def executar(lojas=None, somente_tratamento=False):
+def executar(lojas=None, somente_tratamento=False, somente_extracao=False):
     inicio = datetime.now().replace(microsecond=0)
     resultados = []
+    resumo = {}
     if not somente_tratamento:
         produtos = carregar_catalogo()
         log.info("Catálogo: %s produtos ativos", len(produtos))
@@ -125,9 +127,15 @@ def executar(lojas=None, somente_tratamento=False):
             registrar_execucao(resultados, inicio)
         except Exception:
             log.exception("Falha ao gravar log_execucoes.xlsx")
-        executar_carga(coleta_para_carga(resultados))
+        if somente_extracao:
+            log.info("Somente extração: tabela única gravada em %s; a carga "
+                     "e o tratamento ficam por conta da ingestão.",
+                     config.PASTA_COLETAS)
+        else:
+            executar_carga(coleta_para_carga(resultados))
 
-    resumo = executar_tratamento()
+    if not somente_extracao:
+        resumo = executar_tratamento()
     duracao = datetime.now() - inicio.replace(microsecond=0)
     log.info("Pipeline concluído em %s", str(duracao).split(".")[0])
 
@@ -135,9 +143,10 @@ def executar(lojas=None, somente_tratamento=False):
         partes = [f"{r.loja}: {len(r.registros)}" + (
             "" if r.status in ("OK", "PARCIAL") else f" ({r.status})")
             for r in resultados]
-        notificar("Coleta de preços concluída",
-                  " | ".join(partes) +
-                  f" | Total no banco: {resumo.get('ofertas', 0)} ofertas")
+        if not somente_extracao:
+            partes.append(
+                f"Total no banco: {resumo.get('ofertas', 0)} ofertas")
+        notificar("Coleta de preços concluída", " | ".join(partes))
     return resultados
 
 
@@ -146,8 +155,12 @@ def main():
     parser.add_argument("--lojas", nargs="+",
                         choices=["kabum", "pichau", "terabyte", "amazon"],
                         help="coleta apenas as lojas informadas")
-    parser.add_argument("--somente-tratamento", action="store_true",
-                        help="não coleta; só recalcula os indicadores")
+    modo = parser.add_mutually_exclusive_group()
+    modo.add_argument("--somente-tratamento", action="store_true",
+                      help="não coleta; só recalcula os indicadores")
+    modo.add_argument("--somente-extracao", action="store_true",
+                      help="só coleta e grava a tabela única do dia "
+                           "(CSV e Excel), sem carga e sem tratamento")
     args = parser.parse_args()
 
     os.chdir(Path(__file__).resolve().parent)
@@ -165,7 +178,7 @@ def main():
     try:
         log.info("=" * 70)
         log.info("Início do pipeline (log: %s)", arquivo_log)
-        executar(args.lojas, args.somente_tratamento)
+        executar(args.lojas, args.somente_tratamento, args.somente_extracao)
         return 0
     except Exception as erro:
         log.exception("Falha no pipeline: %s", erro)

@@ -1,16 +1,22 @@
 """Extração diária de preços (UC01 / RF01).
 
 Percorre as lojas, associa cada anúncio a um produto do catálogo e grava a
-planilha bruta do dia em dados/coletas/coleta_AAAA-MM-DD.xlsx.
+tabela única do dia (entrada da carga) em dados/coletas/, nos formatos
+coleta_AAAA-MM-DD.xlsx e coleta_AAAA-MM-DD.csv.
 
 Estratégia por loja:
 * KaBuM!   - API pública de catálogo (uma busca por produto);
 * Amazon   - página de busca no navegador (uma busca por produto);
 * Pichau   - uma página de categoria por execução (rodízio diário);
 * Terabyte - uma página de categoria por execução (rodízio diário).
+
+Colunas da tabela única: as sete primeiras têm o mesmo nome das colunas do
+modelo estrela (produto, loja, oferta), para a carga apenas distribuí-las;
+as duas últimas são complementares.
 """
 
 import logging
+import os
 from dataclasses import dataclass, field
 from datetime import datetime
 
@@ -28,8 +34,9 @@ from navegador import Navegador
 log = logging.getLogger(__name__)
 
 COLUNAS_COLETA = [
-    "data_coleta", "loja", "categoria_produto", "nome_produto",
-    "titulo_anuncio", "preco", "preco_prazo", "url_oferta",
+    "data_coleta", "nome_loja", "url_base", "nome_produto",
+    "categoria_produto", "preco", "url_oferta",
+    "titulo_anuncio", "preco_prazo",
 ]
 COLUNAS_LOG = [
     "data_execucao", "loja", "categoria", "status", "ofertas_coletadas",
@@ -123,7 +130,7 @@ class ScriptExtracao:
                             produto["nome_produto"], erro)
                 resultado.nao_encontrados.append(produto["nome_produto"])
                 continue
-            self._registrar(resultado, kabum.NOME_LOJA, produto, anuncios)
+            self._registrar(resultado, produto, anuncios)
             pausa_educada((1.5, 3))
         return self._finalizar(resultado)
 
@@ -156,7 +163,7 @@ class ScriptExtracao:
                     log.warning("Amazon: falha ao buscar %s: %s",
                                 produto["nome_produto"], erro)
                 break
-            self._registrar(resultado, amazon.NOME_LOJA, produto, anuncios)
+            self._registrar(resultado, produto, anuncios)
             pausa_educada()
         return self._finalizar(resultado)
 
@@ -204,13 +211,12 @@ class ScriptExtracao:
                  len(anuncios), sum(a.disponivel for a in anuncios))
         for produto in self.produtos:
             if produto["categoria_produto"] == categoria:
-                self._registrar(resultado, modulo.NOME_LOJA, produto,
-                                anuncios)
+                self._registrar(resultado, produto, anuncios)
         return self._finalizar(resultado)
 
     # ------------------------------------------------------------------
     @staticmethod
-    def _registrar(resultado, nome_loja, produto, anuncios):
+    def _registrar(resultado, produto, anuncios):
         melhor = escolher_melhor_oferta(anuncios, produto,
                                         config.PALAVRAS_PROIBIDAS_GLOBAIS)
         if melhor is None:
@@ -220,13 +226,14 @@ class ScriptExtracao:
             return
         resultado.registros.append({
             "data_coleta": datetime.now().replace(microsecond=0),
-            "loja": nome_loja,
-            "categoria_produto": produto["categoria_produto"],
+            "nome_loja": resultado.loja,
+            "url_base": config.LOJAS.get(resultado.loja, ""),
             "nome_produto": produto["nome_produto"],
-            "titulo_anuncio": melhor.titulo,
+            "categoria_produto": produto["categoria_produto"],
             "preco": round(melhor.preco, 2),
-            "preco_prazo": melhor.preco_prazo,
             "url_oferta": melhor.url,
+            "titulo_anuncio": melhor.titulo,
+            "preco_prazo": melhor.preco_prazo,
         })
         log.info("  %-10s %-48s R$ %10.2f", resultado.loja,
                  produto["nome_produto"][:48], melhor.preco)
@@ -270,15 +277,28 @@ class ScriptExtracao:
         if registros:
             planilhas.anexar_linhas(arquivo, "coleta", registros,
                                     COLUNAS_COLETA)
-            log.info("Planilha bruta do dia: %s (%s registros novos)",
+            exportar_csv(arquivo)
+            log.info("Tabela única do dia: %s (%s registros novos)",
                      arquivo.name, len(registros))
         return tabela
 
 
 def arquivo_coleta(dia=None):
-    """Caminho da planilha bruta do dia (UC01)."""
+    """Caminho da tabela única do dia em Excel (UC01)."""
     dia = dia or datetime.now().date()
     return config.PASTA_COLETAS / f"coleta_{dia.isoformat()}.xlsx"
+
+
+def exportar_csv(arquivo_xlsx):
+    """Grava a cópia em CSV da tabela única (UTF-8, separador vírgula,
+    ponto decimal e data no padrão ISO), para a ingestão por scripts."""
+    tabela = planilhas.ler_aba(arquivo_xlsx, "coleta", COLUNAS_COLETA)
+    destino = arquivo_xlsx.with_suffix(".csv")
+    temporario = destino.with_name(f"~tmp_{destino.name}")
+    tabela.to_csv(temporario, index=False, encoding="utf-8",
+                  date_format="%Y-%m-%d %H:%M:%S")
+    os.replace(temporario, destino)
+    return destino
 
 
 def coleta_para_carga(resultados, dia=None):
@@ -299,7 +319,8 @@ def coleta_para_carga(resultados, dia=None):
     combinado = pd.concat(partes, ignore_index=True)
     combinado["data_coleta"] = pd.to_datetime(combinado["data_coleta"])
     return combinado.drop_duplicates(
-        subset=["data_coleta", "loja", "nome_produto"], ignore_index=True)
+        subset=["data_coleta", "nome_loja", "nome_produto"],
+        ignore_index=True)
 
 
 def navegador_fechado(erro):

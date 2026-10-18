@@ -55,12 +55,14 @@ def executar_carga(coleta):
     ignoradas = 0
 
     for registro in coleta.to_dict("records"):
-        nome_loja = padronizar_loja(registro["loja"])
+        nome_loja = padronizar_loja(registro["nome_loja"])
         if nome_loja not in ids_loja:
             ids_loja[nome_loja] = proxima_loja
+            url_base = registro.get("url_base")
             novas_lojas.append({
                 "id_loja": proxima_loja, "nome_loja": nome_loja,
-                "url_base": config.LOJAS.get(nome_loja, ""),
+                "url_base": url_base if isinstance(url_base, str) and url_base
+                else config.LOJAS.get(nome_loja, ""),
             })
             proxima_loja += 1
 

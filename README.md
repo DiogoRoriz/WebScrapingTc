@@ -13,7 +13,7 @@ que simulam o Data Warehouse.
 | Arquivo | Conteúdo |
 |---|---|
 | `dados/banco_dados.xlsx` | Aba **dicionario** e abas **produto**, **loja** e **oferta**, com as colunas do DER |
-| `dados/coletas/coleta_AAAA-MM-DD.xlsx` | Planilha bruta de cada dia (UC01), com o título original do anúncio e o preço a prazo |
+| `dados/coletas/coleta_AAAA-MM-DD.csv` e `.xlsx` | Tabela única de cada dia (UC01), entrada da carga. Ver "Integração com a carga e o tratamento da equipe" |
 | `dados/log_execucoes.xlsx` | Uma linha por loja e execução: OK, PARCIAL, BLOQUEADO, SEM_DADOS ou ERRO (RNF03) |
 | `logs/coleta_AAAA-MM-DD.log` | Log detalhado de cada execução |
 | `catalogo_produtos.xlsx` | Produtos monitorados (editável no Excel) |
@@ -62,6 +62,55 @@ O tratamento segue a *Documentação Tratamento e banco*:
 A carga é idempotente: rodar duas vezes no mesmo dia não duplica ofertas, pois
 o registro (produto, loja, dia) já existente é ignorado.
 
+## Integração com a carga e o tratamento da equipe
+
+A extração funciona sozinha e entrega a **tabela única** do dia, que é a
+entrada da carga (`ScriptExtracao.salvar_tabela_unica()` do diagrama de
+classes):
+
+```bash
+py main.py --somente-extracao
+```
+
+Esse modo só coleta e grava a tabela única, sem carga e sem tratamento
+locais. Para agendá-lo assim:
+`powershell -ExecutionPolicy Bypass -File ./agendar_tarefa.ps1 -SomenteExtracao`.
+
+**Arquivos:** `dados/coletas/coleta_AAAA-MM-DD.csv` e
+`dados/coletas/coleta_AAAA-MM-DD.xlsx` (aba `coleta`), com o mesmo conteúdo.
+O CSV usa UTF-8, separador vírgula, ponto decimal e data no padrão
+`AAAA-MM-DD HH:MM:SS`.
+
+| Coluna | Tipo | Destino no modelo estrela | Conteúdo |
+|---|---|---|---|
+| `data_coleta` | TIMESTAMP | oferta.data_coleta | Momento em que o preço foi lido |
+| `nome_loja` | STRING | loja.nome_loja | KaBuM!, Pichau, Terabyte ou Amazon |
+| `url_base` | STRING | loja.url_base | Endereço principal da loja |
+| `nome_produto` | STRING | produto.nome_produto | Nome padronizado do catálogo, igual em todas as lojas |
+| `categoria_produto` | STRING | produto.categoria_produto | Processador, Placa de Vídeo, Memória RAM, SSD, Placa-mãe ou Fonte |
+| `preco` | FLOAT64 | oferta.preco | Preço à vista (PIX/boleto), em reais |
+| `url_oferta` | STRING | oferta.url_oferta | Link direto do anúncio |
+| `titulo_anuncio` | STRING | (complementar) | Título original do anúncio na loja |
+| `preco_prazo` | FLOAT64 | (complementar) | Preço parcelado, quando a loja informa |
+
+Garantias da tabela:
+
+- uma linha por produto, loja e execução, com o anúncio mais barato
+  disponível;
+- produto sem estoque ou não encontrado não gera linha (fica registrado em
+  `log_execucoes.xlsx`);
+- `marca` não vem na tabela, porque é identificada pelo tratamento a partir
+  de `nome_produto`. Os ids e as colunas analíticas também ficam com a carga
+  e o tratamento;
+- se a coleta rodar mais de uma vez no dia, as linhas novas são acrescentadas
+  ao mesmo arquivo. Para manter uma oferta por produto, loja e dia, a carga
+  deve ignorar o que já existe (como faz `carga.py`).
+
+`carga.py` e `tratamento.py` deste projeto são a implementação local de
+referência, sobre Excel, das regras da *Documentação Tratamento e banco*.
+Eles servem para testar o fluxo completo nesta máquina e podem ser
+substituídos pela ingestão da equipe.
+
 ## Como cada loja é coletada
 
 | Loja | Método | Volume por execução |
@@ -92,7 +141,7 @@ feed oficial de produtos (programas de afiliados costumam fornecer um).
 ## Instalação
 
 ```bash
-python -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
 ```
 
 É necessário ter o Google Chrome instalado. O Selenium baixa o driver
@@ -101,10 +150,11 @@ compatível automaticamente.
 ## Uso
 
 ```bash
-python main.py                        # pipeline completo
-python main.py --lojas kabum amazon   # só algumas lojas
-python main.py --somente-tratamento   # só recalcula os indicadores
-python testes.py                      # testes da correspondência e do tratamento
+py main.py                        # pipeline completo
+py main.py --lojas kabum amazon   # só algumas lojas
+py main.py --somente-tratamento   # só recalcula os indicadores
+py main.py --somente-extracao     # só gera a tabela única do dia (CSV/Excel)
+py testes.py                      # testes da correspondência e do tratamento
 ```
 
 ### Automação (sem intervenção humana)

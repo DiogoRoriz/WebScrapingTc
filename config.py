@@ -65,11 +65,14 @@ ESPERA_ENTRE_BUSCAS = (6, 12)  # intervalo aleatório entre buscas (segundos)
 TENTATIVAS_HTTP = 3
 
 # Termos que, se presentes no título, descartam o anúncio para qualquer
-# produto (computadores montados, kits, usados etc.).
+# produto (computadores montados, kits, usados etc.). Na dúvida, é melhor
+# perder um anúncio do que gravar o produto errado.
 PALAVRAS_PROIBIDAS_GLOBAIS = [
-    "pc gamer", "computador", "notebook", "laptop", "kit upgrade", "combo",
-    "usado", "seminovo", "recondicionado", "open box", "openbox", "vitrine",
-    "mostruario", "cooler para", "suporte para",
+    "pc gamer", "pc home", "pc office", "pc completo", "mini pc",
+    "all in one", "computador", "notebook", "laptop", "windows 10",
+    "windows 11", "kit", "combo", "usado", "seminovo",
+    "recondicionado", "open box", "openbox", "vitrine", "mostruario",
+    "cooler para", "suporte para",
 ]
 
 # --------------------------------------------------------------------------

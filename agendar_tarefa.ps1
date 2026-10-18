@@ -12,14 +12,19 @@
     aberta (o Chrome precisa da sessao para abrir a janela fora da tela).
     Nao requer permissao de administrador.
 
+    Com -SomenteExtracao, a tarefa so gera a tabela unica do dia (CSV e
+    Excel em dados\coletas) e deixa a carga e o tratamento para a ingestao.
+
 .EXAMPLE
     powershell -ExecutionPolicy Bypass -File .\agendar_tarefa.ps1
     powershell -ExecutionPolicy Bypass -File .\agendar_tarefa.ps1 -Horario 04:30
+    powershell -ExecutionPolicy Bypass -File .\agendar_tarefa.ps1 -SomenteExtracao
 #>
 param(
     [string]$Horario = "03:00",
     [string]$NomeTarefa = "TCC - Coleta diaria de precos",
-    [string]$Python = ""
+    [string]$Python = "",
+    [switch]$SomenteExtracao
 )
 
 $ErrorActionPreference = "Stop"
@@ -44,7 +49,9 @@ if ($LASTEXITCODE -ne 0) {
     throw "Dependencias ausentes. Rode: `"$python_console`" -m pip install -r `"$pasta\requirements.txt`""
 }
 
-$acao = New-ScheduledTaskAction -Execute $Python -Argument "`"$pasta\main.py`"" -WorkingDirectory $pasta
+$argumentos = "`"$pasta\main.py`""
+if ($SomenteExtracao) { $argumentos += " --somente-extracao" }
+$acao = New-ScheduledTaskAction -Execute $Python -Argument $argumentos -WorkingDirectory $pasta
 $gatilho = New-ScheduledTaskTrigger -Daily -At $Horario
 $opcoes = New-ScheduledTaskSettingsSet `
     -StartWhenAvailable `
@@ -65,7 +72,7 @@ $tarefa = Get-ScheduledTask -TaskName $NomeTarefa
 $info = $tarefa | Get-ScheduledTaskInfo
 Write-Host "Tarefa '$NomeTarefa' agendada."
 Write-Host "  Python:         $Python"
-Write-Host "  Script:         $pasta\main.py"
+Write-Host "  Comando:        main.py $(if ($SomenteExtracao) { '--somente-extracao (so a tabela unica)' } else { '(extracao, carga e tratamento)' })"
 Write-Host "  Proxima coleta: $($info.NextRunTime)"
 Write-Host ""
 Write-Host "Para executar agora:  Start-ScheduledTask -TaskName '$NomeTarefa'"
