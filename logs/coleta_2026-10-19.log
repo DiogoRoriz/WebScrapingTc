@@ -1,0 +1,103 @@
+2026-10-19 03:00:02 INFO    pipeline: ======================================================================
+2026-10-19 03:00:02 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-19.log)
+2026-10-19 03:00:02 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-19 03:00:02 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-19 03:00:03 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-19 03:00:06 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-19 03:00:10 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$    1549.99
+2026-10-19 03:00:13 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-19 03:00:16 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-19 03:00:18 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-19 03:00:21 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2899.90
+2026-10-19 03:00:23 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5499.99
+2026-10-19 03:00:27 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2199.99
+2026-10-19 03:00:29 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-19 03:00:32 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     519.99
+2026-10-19 03:00:34 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$    1016.41
+2026-10-19 03:00:37 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-19 03:00:39 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$    1139.05
+2026-10-19 03:00:41 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-19 03:00:44 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     476.99
+2026-10-19 03:00:46 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     759.00
+2026-10-19 03:00:49 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-19 03:00:52 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-19 03:00:54 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     349.99
+2026-10-19 03:00:56 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     699.89
+2026-10-19 03:00:59 INFO    extracao: KaBuM!: 20 ofertas coletadas, 1 não encontradas
+2026-10-19 03:00:59 INFO    extracao: Tabela única do dia: coleta_2026-10-19.xlsx (20 registros novos)
+2026-10-19 03:01:00 INFO    extracao: Pichau: lendo a categoria Processador (https://www.pichau.com.br/hardware/processadores)
+2026-10-19 03:01:07 INFO    extracao: Pichau: 36 anúncios na página (36 disponíveis)
+2026-10-19 03:01:07 INFO    extracao:   Pichau     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-19 03:01:07 INFO    extracao:   Pichau     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-19 03:01:07 INFO    extracao:   Pichau     Processador AMD Ryzen 5 7600                     não encontrado/sem estoque
+2026-10-19 03:01:07 INFO    extracao:   Pichau     Processador AMD Ryzen 7 7800X3D                  R$    1999.99
+2026-10-19 03:01:07 INFO    extracao:   Pichau     Processador Intel Core i5-12400F                 não encontrado/sem estoque
+2026-10-19 03:01:07 INFO    extracao:   Pichau     Processador Intel Core i5-14400F                 não encontrado/sem estoque
+2026-10-19 03:01:07 INFO    extracao: Pichau: 2 ofertas coletadas, 4 não encontradas
+2026-10-19 03:01:07 INFO    extracao: Tabela única do dia: coleta_2026-10-19.xlsx (2 registros novos)
+2026-10-19 03:01:07 INFO    extracao: Terabyte: lendo a categoria SSD (https://www.terabyteshop.com.br/hardware/hard-disk/ssd)
+2026-10-19 03:01:14 INFO    extracao: Terabyte: 61 anúncios na página (53 disponíveis)
+2026-10-19 03:01:14 INFO    extracao:   Terabyte   SSD Kingston NV3 1TB M.2 NVMe                    R$    1199.90
+2026-10-19 03:01:14 INFO    extracao:   Terabyte   SSD Samsung 990 Pro 1TB M.2 NVMe                 não encontrado/sem estoque
+2026-10-19 03:01:14 INFO    extracao:   Terabyte   SSD Kingston A400 480GB SATA                     R$     569.90
+2026-10-19 03:01:14 INFO    extracao: Terabyte: 2 ofertas coletadas, 1 não encontradas
+2026-10-19 03:01:14 INFO    extracao: Tabela única do dia: coleta_2026-10-19.xlsx (2 registros novos)
+2026-10-19 03:01:14 INFO    extracao: Amazon: buscando 21 produtos
+2026-10-19 03:01:26 ERROR   extracao: Amazon bloqueou o acesso automatizado: Página de bloqueio/desafio em https://www.amazon.com.br/s?k=processador+ryzen+5+5600 (título: 'Amazon.com.br Algo deu errado'). A coleta desta loja foi interrompida (nenhuma tentativa de contorno).
+2026-10-19 03:01:30 INFO    carga: Carga: 24 ofertas, 0 produtos e 0 lojas novas; 0 já existiam no dia
+2026-10-19 03:01:31 INFO    tratamento: Tratamento concluído: 267 ofertas, 13 outliers
+2026-10-19 03:01:31 INFO    tratamento:   Preço médio    137
+2026-10-19 03:01:31 INFO    tratamento:   Sem histórico  54
+2026-10-19 03:01:31 INFO    tratamento:   Boa compra     43
+2026-10-19 03:01:31 INFO    tratamento:   Evitar         33
+2026-10-19 03:01:31 INFO    pipeline: Pipeline concluído em 0:01:29
+2026-10-19 11:05:50 INFO    pipeline: ======================================================================
+2026-10-19 11:05:50 INFO    pipeline: Início do pipeline (log: C:\Users\carva\OneDrive\Desktop\TCC\coletor_precos\logs\coleta_2026-10-19.log)
+2026-10-19 11:05:50 INFO    pipeline: Catálogo: 21 produtos ativos
+2026-10-19 11:05:50 INFO    extracao: KaBuM!: buscando 21 produtos pela API
+2026-10-19 11:05:50 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 5600                     não encontrado/sem estoque
+2026-10-19 11:05:53 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 5700X                    R$    1199.99
+2026-10-19 11:05:57 INFO    extracao:   KaBuM!     Processador AMD Ryzen 5 7600                     R$     999.99
+2026-10-19 11:05:59 INFO    extracao:   KaBuM!     Processador AMD Ryzen 7 7800X3D                  R$    1978.90
+2026-10-19 11:06:01 INFO    extracao:   KaBuM!     Processador Intel Core i5-12400F                 R$     859.99
+2026-10-19 11:06:03 INFO    extracao:   KaBuM!     Processador Intel Core i5-14400F                 R$    1069.99
+2026-10-19 11:06:06 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5060 8GB              R$    2899.90
+2026-10-19 11:06:08 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 5070 12GB             R$    5499.99
+2026-10-19 11:06:11 INFO    extracao:   KaBuM!     Placa de Vídeo GeForce RTX 3060 12GB             R$    2199.99
+2026-10-19 11:06:13 INFO    extracao:   KaBuM!     Placa de Vídeo Radeon RX 7600 8GB                R$    1899.99
+2026-10-19 11:06:16 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 8GB DDR4 3200MHz     R$     519.99
+2026-10-19 11:06:18 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR4 3200MHz    R$    1016.41
+2026-10-19 11:06:21 INFO    extracao:   KaBuM!     Memória Kingston Fury Beast 16GB DDR5 5600MHz    R$    2049.99
+2026-10-19 11:06:23 INFO    extracao:   KaBuM!     SSD Kingston NV3 1TB M.2 NVMe                    R$    1139.05
+2026-10-19 11:06:26 INFO    extracao:   KaBuM!     SSD Samsung 990 Pro 1TB M.2 NVMe                 R$    2399.00
+2026-10-19 11:06:29 INFO    extracao:   KaBuM!     SSD Kingston A400 480GB SATA                     R$     476.99
+2026-10-19 11:06:31 INFO    extracao:   KaBuM!     Placa-mãe ASUS TUF Gaming B550M-Plus             R$     789.99
+2026-10-19 11:06:33 INFO    extracao:   KaBuM!     Placa-mãe MSI PRO B650M-P                        R$     896.99
+2026-10-19 11:06:36 INFO    extracao:   KaBuM!     Fonte Corsair CX650 650W 80 Plus Bronze          R$     359.99
+2026-10-19 11:06:38 INFO    extracao:   KaBuM!     Fonte MSI MAG A650BN 650W 80 Plus Bronze         R$     289.99
+2026-10-19 11:06:41 INFO    extracao:   KaBuM!     Fonte XPG Core Reactor II VE 750W 80 Plus Gold   R$     519.99
+2026-10-19 11:06:43 INFO    extracao: KaBuM!: 20 ofertas coletadas, 1 não encontradas
+2026-10-19 11:06:44 INFO    extracao: Tabela única do dia: coleta_2026-10-19.xlsx (20 registros novos)
+2026-10-19 11:06:45 INFO    extracao: Pichau: lendo a categoria Placa de Vídeo (https://www.pichau.com.br/hardware/placa-de-video)
+2026-10-19 11:06:52 INFO    extracao: Pichau: 36 anúncios na página (36 disponíveis)
+2026-10-19 11:06:52 INFO    extracao:   Pichau     Placa de Vídeo GeForce RTX 5060 8GB              não encontrado/sem estoque
+2026-10-19 11:06:52 INFO    extracao:   Pichau     Placa de Vídeo GeForce RTX 5070 12GB             não encontrado/sem estoque
+2026-10-19 11:06:52 INFO    extracao:   Pichau     Placa de Vídeo GeForce RTX 3060 12GB             não encontrado/sem estoque
+2026-10-19 11:06:52 INFO    extracao:   Pichau     Placa de Vídeo Radeon RX 7600 8GB                R$    1959.99
+2026-10-19 11:06:52 INFO    extracao: Pichau: 1 ofertas coletadas, 3 não encontradas
+2026-10-19 11:06:52 INFO    extracao: Tabela única do dia: coleta_2026-10-19.xlsx (1 registros novos)
+2026-10-19 11:06:52 INFO    extracao: Terabyte: lendo a categoria Placa-mãe (https://www.terabyteshop.com.br/hardware/placas-mae)
+2026-10-19 11:07:19 INFO    extracao: Terabyte: 152 anúncios na página (151 disponíveis)
+2026-10-19 11:07:19 INFO    extracao:   Terabyte   Placa-mãe ASUS TUF Gaming B550M-Plus             R$     779.99
+2026-10-19 11:07:19 INFO    extracao:   Terabyte   Placa-mãe MSI PRO B650M-P                        não encontrado/sem estoque
+2026-10-19 11:07:19 INFO    extracao: Terabyte: 1 ofertas coletadas, 1 não encontradas
+2026-10-19 11:07:19 INFO    extracao: Tabela única do dia: coleta_2026-10-19.xlsx (1 registros novos)
+2026-10-19 11:07:19 INFO    extracao: Amazon: buscando 21 produtos
+2026-10-19 11:07:19 ERROR   extracao: Amazon bloqueou o acesso automatizado: Página de bloqueio/desafio em https://www.amazon.com.br/s?k=processador+ryzen+5+5600 (título: 'Amazon.com.br Algo deu errado'). A coleta desta loja foi interrompida (nenhuma tentativa de contorno).
+2026-10-19 11:07:22 INFO    carga: Carga: 2 ofertas, 0 produtos e 0 lojas novas; 44 já existiam no dia
+2026-10-19 11:07:22 INFO    tratamento: Tratamento concluído: 269 ofertas, 13 outliers
+2026-10-19 11:07:22 INFO    tratamento:   Preço médio    139
+2026-10-19 11:07:22 INFO    tratamento:   Sem histórico  54
+2026-10-19 11:07:22 INFO    tratamento:   Boa compra     43
+2026-10-19 11:07:22 INFO    tratamento:   Evitar         33
+2026-10-19 11:07:22 INFO    pipeline: Pipeline concluído em 0:01:32
